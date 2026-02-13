@@ -311,7 +311,7 @@ async function tryFetchAll() {
     }
   }
   try {
-    const r2 = await fetch('物理_正式任务_老师_B_part1.jsonl');
+    const r2 = await fetch('物理_正式任务_老师_B_part2.jsonl');
     if (!r2.ok) throw new Error('jsonl 缺失');
     const txt = await r2.text();
     parseJsonl(txt);
